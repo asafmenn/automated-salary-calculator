@@ -1,7 +1,8 @@
 # THIS TEXT FILES CONTAINS ALL THE LOG OF THE HOURS EVERY MONTH
-month_hours = 'HadSigns/FebHrs.txt'
 
+month_hours = '*/FebHrs.txt'
 
+"""This function calculates the hours of every given day"""
 def get_salary_details(start, end):
     h1, m1 = start.split(':')
     h2, m2 = end.split(':')
@@ -17,13 +18,13 @@ def get_salary_details(start, end):
     total_time = float(str(hours) + '.' +str(minutes))
     return total_time
 
-
+# Reading the txt file with all the working dates and hours
 with open(month_hours, 'r') as file:
     work_day = 0
     total_hours = []
     for line in file:
-        line = line.split(' - ')
-        date, start_time, end_time = line
+        line = line.split(' - ') # Splitting each parameter
+        date, start_time, end_time = line # Unpacking all the parameters
         work_hours = get_salary_details(start_time, end_time)
         total_hours.append(work_hours)
         work_day += 1
