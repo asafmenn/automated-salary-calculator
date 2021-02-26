@@ -1,4 +1,5 @@
 from hours import work_day, total_hours
+# PARAMETERS:
 base_salary = 50
 daily_hour = 10
 food_budget = 100
