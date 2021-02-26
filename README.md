@@ -10,3 +10,5 @@ in hours.py:
 you will need to point the root in month_hours variable.
 
 exec the script in salarycalc.py.
+
+in this case: 'FebHrs.txt' is an example.
